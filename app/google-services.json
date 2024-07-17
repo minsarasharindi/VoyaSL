@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399492718790",
+    "project_id": "voyasl",
+    "storage_bucket": "voyasl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399492718790:android:93193ea67e1dc2cf74f7c7",
+        "android_client_info": {
+          "package_name": "com.cy.voyasl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIcF70lkATqJW_DvBLkJ1JLv2UHeqc4hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

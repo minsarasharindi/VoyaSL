@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/hederbg" />
+
+    <ImageView
+        android:id="@+id/menuicon"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/menu_24dp_fill0_wght400_grad0_opsz24"/>
+
+    <ImageView
+
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/person_fill0_wght400_grad0_opsz24"
+        android:layout_alignParentRight="true"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/menuicon"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_above="@id/btnbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+            </androidx.viewpager2.widget.ViewPager2>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="vertical"
+                android:background="@drawable/mainf"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_20sdp">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vesak Festival \n April 23, 2024"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="vertical"
+                android:background="@drawable/mainf"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_20sdp">
+
+
+                <TextView
+                    android:id="@+id/EmergencyHotline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/btnbar"
+        android:layout_alignParentBottom="true">
+
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:srcCompat="@drawable/home_fill0_wght400_grad0_opsz24"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/roundgrd"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/cameramodel"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:srcCompat="@drawable/photo_camera_24dp_fill0_wght400_grad0_opsz24"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/roundgrd"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/place"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:srcCompat="@drawable/map_fill0_wght400_grad0_opsz24"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/roundgrd"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:srcCompat="@drawable/local_taxi_fill0_wght400_grad0_opsz24"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/roundgrd"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/translate"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:srcCompat="@drawable/g_translate_fill0_wght400_grad0_opsz24"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/roundgrd"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:srcCompat="@drawable/person_fill0_wght400_grad0_opsz24"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/roundgrd"
+            android:padding="@dimen/_20sdp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

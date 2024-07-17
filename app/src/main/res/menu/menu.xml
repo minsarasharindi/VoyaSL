@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- android:icon="@drawable/baseline_autorenew_24"-->
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="MENU">
+
+            <menu>
+
+
+                <item
+                    android:title="Profile" />
+
+                <item
+                    android:title="Translate" />
+
+                <item
+                    android:title="History" />
+
+                <item
+                    android:title="Wallet" />
+
+                <item
+                    android:title="Notifications" />
+
+                <item
+                    android:title="Favourite" />
+
+                <item
+                    android:title="Change Password" />
+
+                <item
+                    android:title="Invite Friends" />
+
+                <item
+                    android:title="Search" />
+
+
+
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Settings and Support">
+
+            <menu>
+
+                <item
+                    android:title="Settings and Privacy" />
+
+
+                <item
+                    android:title="Help center" />
+
+                <item
+                    android:title="Log Out" />
+
+                <item
+                    android:id="@+id/admin"
+                    android:title="Admin" />
+
+
+
+            </menu>
+
+        </item>
+    </group>
+
+
+</menu>

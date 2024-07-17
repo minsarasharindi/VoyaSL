@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="#0B111A">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Admin "
+        android:textSize="@dimen/_30sdp"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addlocation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:text="Add Location"
+        android:background="@drawable/btnbg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:elevation="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addtaxi"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:text="Add Taxi"
+        android:background="@drawable/btnbg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        android:layout_below="@id/addlocation"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
