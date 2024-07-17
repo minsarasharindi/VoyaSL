@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaxiActivity"
+    android:background="#0B111A">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Add Taxi"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:scrollbars="none"
+        android:background="@drawable/round"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp">
+
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/baseline_add_a_photo_24"
+                        android:layout_gravity="center"/>
+
+
+            <Spinner
+                android:id="@+id/spinner_taxitype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edittextbg"
+                android:padding="@dimen/_10sdp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#80000000"/>
+
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Name"
+                android:background="@drawable/edittextbg"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/Vehicalnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Vehical Number"
+                android:background="@drawable/edittextbg"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/Fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Fee 1Km"
+                android:background="@drawable/edittextbg"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addbutton"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:text="Add"
+                android:background="@drawable/btnbg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:elevation="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

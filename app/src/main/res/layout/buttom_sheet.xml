@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/hedlyr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp"
+        android:orientation="vertical"
+        android:background="@drawable/btnseet">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a ride"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/Compact"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/vehicalbgbg"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        app:srcCompat="@drawable/v1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Compact"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 200.00"
+                        android:textColor="#5A5A5A"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Family"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/vehicalbgbg"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        app:srcCompat="@drawable/v2"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Family"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 400.00"
+                        android:textColor="#5A5A5A"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Premium"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/vehicalbgbg"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        app:srcCompat="@drawable/v2"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Premium"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 600.00"
+                        android:textColor="#5A5A5A"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/booknow"
+        android:layout_marginTop="@dimen/_210sdp"
+        android:adjustViewBounds="true"/>
+
+
+</RelativeLayout>
